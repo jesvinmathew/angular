@@ -1,14 +1,27 @@
 <style>
-
+  .toolbar{
+    background-color: aqua;
+  }
+  #pramod{
+    font-size: large;
+    font-weight: bold;
+  }
+div{
+  padding: 20px;
+  margin: 20px
+}
 </style>
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<div class="toolbar" id="pramod" role="banner">
   <h1 [style.color] = "'green'"
     [style.text-align] = "'center'" >
-    Hello World
+    hai world
 </h1>
   Hello World
+</div>
+<div class="toolbar" style="color: #2600ff; background-color: chocolate;">
+    providence college
 </div>
 
 <router-outlet></router-outlet>
