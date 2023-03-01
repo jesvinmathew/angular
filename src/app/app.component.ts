@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HeroService } from './hero.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApp';
+  heroes: Hero[] = [];
+  constructor(private heroService: HeroService) {}
+  getHeroes(): void {
+    this.heroes = this.heroService.getHeroes();
+  }
 }
