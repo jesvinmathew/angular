@@ -9,6 +9,11 @@
      <option *ngFor = "let i of months">{{i}}</option>
   </select>
 </div>
+<div> Date :
+  <select>
+     <option *ngFor = "let f of [].constructor(31); let r = index">{{r+1}}</option>
+  </select>
+</div>
 <br/>
 <div>
   <span *ngIf = "isavailable; then condition1 else condition2">

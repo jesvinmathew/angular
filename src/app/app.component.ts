@@ -14,7 +14,8 @@ export class AppComponent {
   isavailable = true;
   myClickFunction() {
   //just added console.log which will display the event details in browser on click of the button.
-  alert("Button is clicked");
-  console.log();
+  // alert("Button is clicked");
+  this.isavailable = !this.isavailable;
+  console.log('ABC');
 }
 }
